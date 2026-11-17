@@ -1,0 +1,27 @@
+{
+  "name": "cashly-monorepo",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Cashly — Personal Money & Expense Tracker",
+  "scripts": {
+    "start": "npm run start --prefix mobile",
+    "android": "npm run android --prefix mobile",
+    "ios": "npm run ios --prefix mobile",
+    "web": "npm run web --prefix mobile",
+    "test": "npm run test --prefix mobile",
+    "backend:dev": "cd backend && uvicorn app.main:app --reload --port 8000"
+  },
+  "workspaces": [
+    "mobile"
+  ],
+  "keywords": [
+    "expense-tracker",
+    "react-native",
+    "expo",
+    "fastapi",
+    "supabase"
+  ],
+  "author": "",
+  "license": "UNLICENSED"
+}
+
